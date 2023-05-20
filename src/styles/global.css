@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :focus {
+    @apply outline-none ring-2 ring-blue-600 ring-offset-1 ring-offset-neutral-500;
+  }
+
+  body {
+    @apply text-gray-500;
+    -webkit-font-smoothing: antialiased;
+  }
+}
